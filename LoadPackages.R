@@ -199,9 +199,9 @@ if (!require("rNVD3shaman")) {
   devtools::install_github('aghozlane/rNVD3shaman')
 }
 
-if (!require("DESeq2shaman")) {
-  devtools::install_github("aghozlane/DESeq2shaman")
-}
+#if (!require("DESeq2shaman")) {
+#  devtools::install_github("aghozlane/DESeq2shaman")
+#}
 
 if(!require("PhyloTreeMetaR")){
   devtools::install_github("pierreLec/PhyloTreeMetaR")
@@ -221,6 +221,7 @@ libshaman=c("shiny", "rjson", "ape", "GUniFrac", "psych", "ggplot2", "vegan", "d
             "shinyBS", "tools", "flexdashboard", "backports", "readr", "jsonlite", "shinyFiles", 
             "htmltools", "rAmCharts", "colourpicker", "data.table", "UpSetR", "ggrepel", "igraph", 
             "visNetwork", "shinytoastr", "scatterD3", "devtools", "shinydashboardshaman", "d3heatmap", 
-            "biomformatshaman", "rNVD3shaman", "DESeq2shaman", "PhyloTreeMetaR", "treeWeightD3", "d3vennR",
+            "biomformatshaman", "rNVD3shaman", # "DESeq2shaman", 
+            "PhyloTreeMetaR", "treeWeightD3", "d3vennR",
             "googleVis", "stringr")
 lapply(libshaman, require, character.only = TRUE)
